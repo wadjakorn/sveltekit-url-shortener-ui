@@ -1,17 +1,13 @@
-# create-svelte
+# Sveltetkit URL Shortner UI
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Setup
 
-If you're seeing this, you've probably already done this step. Congrats!
+Open .env file and add your host api such as `http://localhost:3000` or `https://yourdomain.com`
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```
+PUBLIC_SERVER_HOST=<your_host_api>
 ```
 
 ## Developing
