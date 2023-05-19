@@ -2,9 +2,12 @@
     let username = '';
     let password = '';
 
+    /** @type {import('./$types').PageData} */
+    export let data: { loginUrl: string };
+
     async function login(event: SubmitEvent) {
         event.preventDefault();
-        const response = await fetch('http://localhost:3000/api/login', {
+        const response = await fetch(data.loginUrl, {
             method: 'POST',
             body: JSON.stringify({ username, password }),
             headers: {
