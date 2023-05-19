@@ -1,8 +1,7 @@
-import { redirect } from '@sveltejs/kit';
-
 /** @type {import('./$types').LayoutLoad} */
-export function load() {
+export function load({ url }) {
     return {
+        pathName: url.pathname.split('/').filter(Boolean).pop(),
         menus: [
             {
                 label: 'home',

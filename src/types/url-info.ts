@@ -6,10 +6,12 @@ export interface UrlInfo {
     latestClick: string;
     createdAt: string;
     tags: string[];
-    visits: {
-        from: string;
-        count: number;
-    }[];
+    visits: Visits[];
+}
+
+export interface Visits {
+    from: string;
+    count: number;
 }
 
 export interface GetLinkResp {

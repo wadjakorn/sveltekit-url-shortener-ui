@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { ComputedUrlInfo } from "../types/url-info";
+    import Tag from './tag.svelte';
 
     export let list: ComputedUrlInfo[] = [];
 </script>
@@ -36,7 +37,7 @@
             </td>
             <td class="py-3 px-6 text-center">
                 {#each item.tags as tag, i}
-                    <span class="bg-purple-200 text-purple-600 py-1 px-3 rounded-full text-xs">{tag}</span>
+                    <Tag>{tag}</Tag>
                 {/each}
             </td>
             <td class="py-3 px-6 text-center">

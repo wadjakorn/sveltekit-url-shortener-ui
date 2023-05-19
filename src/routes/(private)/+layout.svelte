@@ -6,7 +6,7 @@
     export let data;
 </script>
 
-<Nav menus={data.menus} ></Nav>
+<Nav menus={data.menus} pathName={data.pathName}></Nav>
 
 <div class="container mx-auto mt-4">
     <slot></slot>
