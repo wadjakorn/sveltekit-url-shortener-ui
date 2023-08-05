@@ -19,6 +19,8 @@
 <div class="container mx-auto mt-8">
   {#if $loading.status == "IDLE"}
     <slot></slot>
+  {:else}
+    <Loading />
   {/if}
 </div>
 

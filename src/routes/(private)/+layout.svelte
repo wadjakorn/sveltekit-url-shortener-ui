@@ -14,10 +14,10 @@
 
 <Nav data={data}></Nav>
 
-<Loading />
-
 <div class="container mx-auto mt-4">
     {#if $loading.status == "IDLE"}
         <slot></slot>
+    {:else}
+        <Loading />
     {/if}
 </div>
