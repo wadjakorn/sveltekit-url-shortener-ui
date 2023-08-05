@@ -4,7 +4,6 @@
 
     import Table from '../../../components/table.svelte';
 	import type { ComputedLinkResp } from '../../../types/url-info';
-
 </script>
 
 <h1>Links</h1>

@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { loading } from '$lib/loading';
+
     let username = '';
     let password = '';
 
@@ -7,6 +9,7 @@
 
     async function login(event: SubmitEvent) {
         event.preventDefault();
+        loading.setLoading(true);
         const response = await fetch(data.loginUrl, {
             method: 'POST',
             body: JSON.stringify({ username, password }),
@@ -23,6 +26,7 @@
             window.location.href = '/links';
         } else {
             alert(resp.message)
+            loading.setLoading(false);
         }
     }
 </script>

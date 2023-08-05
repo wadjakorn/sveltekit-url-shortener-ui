@@ -6,6 +6,6 @@ export async function load() {
 
     // localStorage.removeItem('token');
 
-    // throw redirect(300, '/login');
+    // throw redirect(307, '/login');
     return {}
 }
